@@ -470,15 +470,8 @@ h6 {
 
 .protocol-header,
 .protocol-item {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.protocol-header.revealed,
-.protocol-item.revealed {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 
 .protocol-header {
@@ -600,30 +593,6 @@ h6 {
 }
 
 /* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @keyframes float {
     0% {
         transform: translateY(0px);
@@ -636,18 +605,6 @@ h6 {
     100% {
         transform: translateY(0px);
     }
-}
-
-/* Hidden Class for Intersection Observer */
-.hidden {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* Glitch Effect */
